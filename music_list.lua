@@ -28,8 +28,8 @@ randomizer_music_list = {
     [26] = { "Super Mario 64", "Metal Cap" },
     [27] = { "Super Mario 64", "Koopa Road" },
     [28] = { "Super Mario 64", "Race" },
-    [29] = { "Super Mario 64", "Event: Boss Battle" },
-    [30] = { "Super Mario 64", "Bowser Battle" },
+    [29] = { "Super Mario 64", "Boss" },
+    [30] = { "Super Mario 64", "Bowser Boss" },
     [31] = { "Super Mario 64", "Select a File" },
     [32] = { "Super Mario 64", "Riding a shell" },
     [33] = { "Super Mario 64", "Game over!" },
@@ -37,7 +37,7 @@ randomizer_music_list = {
     [35] = { "Bomberman 64", "Blue Resort" },
     [36] = { "Bomberman Hero", "Redial" },
     [37] = { "Wii", "Shop Channel" },
-    [38] = { "Chrono Trigger", "Spekkio's Theme" },
+    [38] = { "Chrono Trigger", "Delightful Spekkio" },
     [39] = { "Castlevania: Order of Ecclesia", "A Prologue" },
     [40] = { "Diddy Kong Racing", "Credits (Port)" },
     [41] = { "Diddy Kong Racing", "Frosty Village" },
@@ -50,7 +50,7 @@ randomizer_music_list = {
     [48] = { "EarthBound", "Home Sweet Home" },
     [49] = { "EarthBound", "Onett Theme" },
     [50] = { "The Legend of Zelda: Ocarina of Time", "Gerudo Valley" },
-    [51] = { "???", "Hard Puzzle" },
+    [51] = { "Pokémon Shuffle", "Stage (Hard)" },
     [52] = { "Super Mario 64", "Inside Castle Walls (Remix)" },
     [53] = { "Kirby: Nightmare in Dream Land", "Butter Building" },
     [54] = { "Kirby 64: The_Crystal Shards", "Shiver Star" },
@@ -72,8 +72,8 @@ randomizer_music_list = {
     [70] = { "Pilotwings", "Light Plane" },
     [71] = { "Pokémon Diamond & Pearl", "Eterna Forest" },
     [72] = { "Pokémon HeartGold & SoulSilver", "Lavender Town" },
-    [73] = { "Super Mario 64", "Rainbow Castle" },
-    [74] = { "Sonic Adventure", "Red Mountain" },
+	[73] = { "Mario Party", "Mario's Rainbow Castle" },
+	[74] = { "Bomberman 64", "Red Mountain" },
     [75] = { "Deltarune", "Rude Buster" },
     [76] = { "Super Mario 3D World", "Overworld" },
     [77] = { "Super Mario Sunshine", "No-Pack/Puzzle Level" },
@@ -88,7 +88,7 @@ randomizer_music_list = {
     [86] = { "Yoshi's Island (SNES)", "Caves" },
     [87] = { "The Legend of Zelda: Ocarina of Time", "Water Temple" },
     [88] = { "Wave Race 64", "Sunny Beach" },
-    [89] = { "Final Fantasy VII", "WFH" },
+    [89] = { "Unknown Game", "WFH" },
     [90] = { "The Legend of Zelda: Ocarina of Time", "Kokiri Forest" },
     [91] = { "The Legend of Zelda: Ocarina of Time", "Zora's Domain" },
     [92] = { "The Legend of Zelda: Ocarina of Time", "Kakariko Village" },
@@ -155,6 +155,8 @@ randomizer_music_list = {
     [153] = { "Mario Kart 64", "Rainbow Road" }
 }
 
+-- this only prints the desired track text from index,
+-- it doesn't fetch the playing track from in-game memory
 function get_music_track(index)
     local entry = music_list[index]
     if entry then
